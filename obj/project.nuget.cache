@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7bRuEFByNRy68fM83MCP9N4lZ17mxGPQ5MsjAh5e8hukJZq/P60To5zzON2NizVupVhxkc0irlvmF5mNJ6aMmA==",
+  "dgSpecHash": "MhSEejtaXVgB064jjkWHQqBScL84R/MU+TEIbfC2Th0Q8T4z+3nC1u4C0hrKPWbzK66EdKw2ffLtqSh8l7IImA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JoseCampos\\Documents\\agendaCitas\\razorpages3.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\JoseCampos\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.11\\microsoft.netcore.app.ref.7.0.11.nupkg.sha512",
-    "C:\\Users\\JoseCampos\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.11\\microsoft.windowsdesktop.app.ref.7.0.11.nupkg.sha512",
-    "C:\\Users\\JoseCampos\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.11\\microsoft.aspnetcore.app.ref.7.0.11.nupkg.sha512",
-    "C:\\Users\\JoseCampos\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.11\\microsoft.netcore.app.host.win-x64.7.0.11.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Descargas\\img\\agendaCitas-main\\razorpages3.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

@@ -5,24 +5,85 @@
 
 
 
-   
-    <div class="containerCita">
-       @{ for (int i = 0; i < Model.nameClientList.Count; i++){
-        <article class="tarjetaCita">
-            
-            <time datetime="2023-10-17T15:30s">@Model.timeList[i] </time>  
-            
-            <div class="detallesCita">
-                <h2>Nombre: @Model.nameClientList[i]</h2>
-                <p>Asunto: @Model.asuntoList[i]</p> 
-                <p>Persona Asignada: @Model.namePerson</p>
-                <p>Cita confirmada: @Model.confirmacion</p>
-                <p>Num. Tel: @Model.telUser</p>
-                <a href=""> Ver mas</a>
-            </div>
-        </article>
-        }}
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <form method="get">
+                <input type="date" name="fecha" placeholder="Buscar por fecha...">
+
+                <input type="text" name="searchTerm" placeholder="Buscar por nombre...">
+                <input type="text" name="hora" placeholder="Buscar por hora...">
+                <input type="text" name="asunto" placeholder="Buscar por asunto...">
+                <input type="text" name="asignada" placeholder="Buscar por asignada...">
+                <input type="text" name="confirmacion" placeholder="Buscar por confirmación...">
+                <input type="text" name="telefono" placeholder="Buscar por teléfono...">
+                <button type="submit">Buscar</button>   
+            </form>
+        </div>
+
     </div>
 
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-for="formularioPrueba" action="" method="post" class="mi-formulario">
+                <label asp-for="hora" class="form-text">Hora</label>
+                <input type="time" asp-for="hora" class="form-control">
+                <label asp-for="nameClient" class="form-text">Nombre Cliente</label>
+                <input type="text" asp-for="nameClient" class="form-control">
+                <label asp-for="asunto" class="form-text">Asunto</label>
+                <input type="text" asp-for="asunto" class="form-control">
+                <label asp-for="asignada" class="form-text">Asignada a:</label>
+                <input type="text" asp-for="asignada" class="form-control">
+                <label asp-for="confirmacion" class="form-text">Cita confirmada:</label>
+                <select asp-for="confirmacion" class="form-control">
+                    <option value="Si">Sí</option>
+                    <option value="No">No</option>
+                    <option value="Pendiente">Pendiente</option>
+                </select>
+                <label asp-for="telefono" class="form-text">Telefono:</label>
+                <input type="tel" asp-for="telefono" class="form-control">
+                <button type="submit" class="btn btn-primary">Registrar</button>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <div class="containerCita">
+                @{
+                    if (@Model.mostrar == "si")
+                    {
+                        <article class="tarjetaCita">
+                            <time datetime="2023-10-17T15:30s">@Model.hora</time>
+                            <div class="detallesCita">
+                                <h2>Nombre: @Model.nameClient</h2>
+                                <p>Asunto: @Model.asunto</p>
+                                <p>Asignada a: @Model.asignada</p>
+                                <p>Cita confirmada: @Model.confirmacion</p>
+                                <p>Num. Tel: @Model.telefono</p>
+                                <a href=""> Ver más</a>
+                            </div>
+                        </article>
+                    }
+                }
 
-
+                @{
+                    for (int i = 0; i < Model.nameClientList.Count; i++)
+                    {
+                        <article class="tarjetaCita">
+                            <time datetime="2023-10-17T15:30s">@Model.horaList[i]</time>
+                            <div class="detallesCita">
+                                <h2>Nombre: @Model.nameClientList[i]</h2>
+                                <p>Asunto: @Model.asuntoList[i]</p>
+                                <p>Asignada a: @Model.licAtenderaList[i]</p>
+                                <p>Cita confirmada: @Model.confirmacionList[i]</p>
+                                <p>Num. Tel: @Model.telUserList[i]</p>
+                                <a href=""> Ver más</a>
+                            </div>
+                        </article>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
