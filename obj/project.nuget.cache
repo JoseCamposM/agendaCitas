@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "v9NTn7w7I3pgszuJUJaUthi3f2CQ7Wp0OKpw66oVqk2S9uDf96PozP7UYBwvHbUDGiPwIarKGkyq80INWnrYdA==",
+  "dgSpecHash": "7bRuEFByNRy68fM83MCP9N4lZ17mxGPQ5MsjAh5e8hukJZq/P60To5zzON2NizVupVhxkc0irlvmF5mNJ6aMmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jc230\\OneDrive\\Documentos\\GitHub\\razorpages3\\razorpages3.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\JoseCampos\\Documents\\agendaCitas\\razorpages3.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JoseCampos\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.11\\microsoft.netcore.app.ref.7.0.11.nupkg.sha512",
+    "C:\\Users\\JoseCampos\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.11\\microsoft.windowsdesktop.app.ref.7.0.11.nupkg.sha512",
+    "C:\\Users\\JoseCampos\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.11\\microsoft.aspnetcore.app.ref.7.0.11.nupkg.sha512",
+    "C:\\Users\\JoseCampos\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.11\\microsoft.netcore.app.host.win-x64.7.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
