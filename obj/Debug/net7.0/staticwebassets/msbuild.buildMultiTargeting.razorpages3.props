@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\razorpages3.props" />
+</Project>
